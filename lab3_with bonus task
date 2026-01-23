@@ -1,0 +1,38 @@
+pwd = input("Enter your password:")
+has_number = False
+has_uppercase = False
+has_lowercase = False
+special_character = False
+has_space = False
+rejection_password =["password","12345678","qwerty123","Password1"]
+rejection = False
+for n in pwd:
+    if n in "0123456789":
+        has_number = True
+    if n in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        has_uppercase = True
+    if n in "abcdefghijklmnopqrstuvwxyz":
+        has_lowercase = True
+    if n in "!@#$%^&*":
+        special_character = True
+if pwd in rejection_password:
+    rejection = True
+if " " in pwd:
+    has_space = True
+
+if rejection:
+    print("Too common - choose another password")
+elif has_space:
+    print("Spaces are not allowed")
+elif len(pwd) < 8:
+    print("Too short") 
+elif not has_number:
+    print("Need a number")
+elif not has_uppercase:
+    print("Need an uppercase letter")
+elif not has_lowercase:
+    print("Need a lowercase letter")
+elif not special_character:
+    print("Need a special character")
+else:
+    print("Password Strong")  
