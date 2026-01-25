@@ -1,6 +1,6 @@
 # CS5001
 ## Lab practice for class CS5001 in Northeastern University
-###Lab:  
+### Lab:  
 Lab3: build a password cheker
-###Homework:
+### Homework:
 HW3: Rock – Paper – Scissors Game
